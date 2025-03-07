@@ -1,0 +1,235 @@
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Header Styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+}
+
+.logo img {
+  width: 50px;
+  height: auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: black;
+  font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #ccc;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.hero-image {
+  width: 625px;
+  height: 474px;
+  background-color: #ddd;
+}
+
+.about {
+  text-align: center;
+  padding: 50px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.about h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.about-image {
+  width: 625px;
+  height: 480px;
+  background-color: #ddd;
+}
+
+.about p {
+  max-width: 500px;
+  font-size: 16px;
+  color: #666;
+  text-align: left;
+}
+
+#skills {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  gap: 250px; /* Jarak antar skill */
+  margin-top: 30px;
+}
+
+.skill-item {
+  display: inline-block;
+  margin-right: 40px; /* Jarak antar foto */
+}
+.skill-item:last-child {
+  margin-right: 0; /* Hapus margin di ikon terakhir */
+}
+
+.skill {
+  max-width: 250px;
+  text-align: center;
+}
+
+.skill img {
+  width: 250px;
+  height: 250px;
+  background-color: #d3d3d3; /* Warna abu-abu seperti di contoh */
+  border-radius: 50%;
+  margin: 0 auto 15px;
+}
+
+#projects {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: center;
+  gap: 250px; /* Jarak antar skill */
+  margin-top: 30px;
+}
+
+.project-item {
+  display: inline-block;
+  margin-right: 40px; /* Jarak antar foto */
+}
+.project-item:last-child {
+  margin-right: 0; /* Hapus margin di ikon terakhir */
+}
+
+.project {
+  max-width: 250px;
+  text-align: center;
+}
+
+.project img {
+  width: 250px;
+  height: 250px;
+  background-color: #d3d3d3; /* Warna abu-abu seperti di contoh */
+  margin: 0 auto 15px;
+}
+
+#galeri {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.galeri-container {
+  display: flex;
+  justify-content: center;
+  gap: 250px; /* Jarak antar skill */
+  margin-top: 30px;
+}
+
+.galeri-item {
+  display: inline-block;
+  margin-right: 40px; /* Jarak antar foto */
+}
+.galeri-item:last-child {
+  margin-right: 0; /* Hapus margin di ikon terakhir */
+}
+
+.galeri {
+  max-width: 250px;
+  text-align: center;
+}
+
+.galeri img {
+  width: 250px;
+  height: 250px;
+  background-color: #d3d3d3; /* Warna abu-abu seperti di contoh */
+  margin: 0 auto 15px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+  padding: 20px 0;
+}
+
+.email-container {
+  flex-grow: 1; /* Mengisi ruang kosong agar email tetap di tengah */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.email {
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+footer {
+  position: absolute;
+  bottom: 10px;
+}
