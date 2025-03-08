@@ -72,7 +72,7 @@ button {
   border-radius: 5px;
 }
 
-.hero-image {
+.hero-image img {
   width: 625px;
   height: 474px;
   background-color: #ddd;
@@ -97,9 +97,10 @@ button {
   align-items: center;
   justify-content: center;
   gap: 30px;
+  margin-top: 100px;
 }
 
-.about-image {
+.about-image img {
   width: 625px;
   height: 480px;
   background-color: #ddd;
