@@ -10,61 +10,129 @@
 
 <body>
   <header>
-    <h1>Selamat Datang di Portfolio Saya</h1>
+    <div class="logo">Logo</div>
     <nav>
-      <ul>
-        <li><a href="#about">Tentang Saya</a></li>
-        <li><a href="#skills">Skill</a></li>
-        <li><a href="#projects">Proyek</a></li>
-        <li><a href="#contact">Kontak</a></li>
-      </ul>
+      <a href="#about">About Me</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Project</a>
+      <a href="#gallery">Galeri</a>
+      <button id="theme-toggle">🌙</button>
     </nav>
   </header>
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Selamat Datang <br> di Portfolio <br> Saya</h1>
+      <br>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium necessitatibus eos eum assumenda,
+        laudantium possimus.
+      </p>
+      <br>
+      <button style="margin-right: 30px;">Button 1</button>
+      <button>Button 2</button>
+    </div>
+    <div class="hero-image"></div>
+  </section>
 
-  <section id="about">
-    <h2>Tentang Saya</h2>
-    <p>Halo! Saya adalah seorang front-end developer pemula yang sedang belajar HTML, CSS, dan JavaScript.</p>
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <div class="about-content" style="text-align: left;">
+      <div class="about-image"></div>
+      <p style="text-align: left; max-width: 40%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Maecenas in ex at
+        ligula varius volutpat. Lorem,
+        ipsum dolor sit amet consectetur adipisicing elit. Possimus, voluptatum.</p>
+    </div>
   </section>
 
   <section id="skills">
-    <h2>Skill</h2>
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-    </ul>
+    <h2>Skills</h2>
+    <div class="skills-container">
+      <div class="skill-item">
+        <div class="skill-image"></div>
+        <p style="text-align: left;">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in velit id mi lacinia volutpat
+          vitae quis turpis.
+        </p>
+      </div>
+      <div class="skill-item">
+        <div class="skill-image"></div>
+        <p style="text-align: left;">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in velit id mi lacinia volutpat
+          vitae quis turpis.
+        </p>
+      </div>
+      <div class="skill-item">
+        <div class="skill-image"></div>
+        <p style="text-align: left;">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in velit id mi lacinia volutpat
+          vitae quis turpis.
+        </p>
+      </div>
+    </div>
   </section>
 
   <section id="projects">
-    <h2>Proyek</h2>
-    <div class="project-list">
+    <h2>Project</h2>
+    <div class="projects-container">
       <div class="project-item">
-        <h3>To-Do List App</h3>
-        <p>Aplikasi sederhana untuk mengelola tugas sehari-hari.</p>
+        <div class="project-image"></div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in velit id mi lacinia volutpat
+          vitae quis turpis.
+        </p>
+      </div>
+      <div class="project-item">
+        <div class="project-image"></div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in velit id mi lacinia volutpat
+          vitae quis turpis.
+        </p>
+      </div>
+      <div class="project-item">
+        <div class="project-image"></div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in velit id mi lacinia volutpat
+          vitae quis turpis.
+        </p>
       </div>
     </div>
+  </section>
 
 
-    <section id="gallery">
-      <h2>Galeri</h2>
-      <div class="galeri-list">
-        <div class="galeri-item">
-          <h3>Gallery Foto</h3>
-          <p>Galeri foto responsif menggunakan CSS Grid.</p>
-        </div>
+  <section id="gallery">
+    <h2>Galeri</h2>
+    <div class="gallery-container">
+      <div class="gallery-item">
+        <div class="gallery-image"></div>
       </div>
-    </section>
+      <div class="gallery-item">
+        <div class="gallery-image"></div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-image"></div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-image"></div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-image"></div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-image"></div>
+      </div>
+    </div>
+  </section>
 
-    <section id="contact">
-      <h2>Kontak</h2>
-      <p>Email: example@email.com</p>
-    </section>
+  <section id="contact">
+    <h2>Kontak</h2>
+    <p>Email: example@email.com</p>
+  </section>
 
-    <footer>
-      <p>&copy; 2023 Portfolio Saya</p>
-    </footer>
+  <footer>
+    <p>&copy; 2023 Portfolio Saya</p>
+  </footer>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>

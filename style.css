@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    max-width: 1200px;
+    /* width: 100%; */
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 153px 0 153px;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    gap: 150px;
+}
+
+button {
+    width: 150px;
+    height: 50px;
+}
+
+.hero-text {
+    flex: 1;
+    max-width: 40%;
+}
+
+.hero-text h1 {
+    max-width: 591px;
+    height: auto;
+    text-align: left;
+    font-size: 38px;
+    line-height: 1.2;
+}
+
+.hero-image {
+    width: 330px;
+    height: 240px;
+    background: #ccc;
+}
+
+.about {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.about-image {
+    width: 312px;
+    height: 240px;
+    background: #ccc;
+}
+
+section {
+    margin: 100px;
+}
+
+#skills {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.skill-item {
+    width: 280px;
+}
+
+.skill-image {
+    width: 150px;
+    height: 150px;
+    background: #ccc;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+}
+
+.skill-item p {
+    text-align: center;
+    line-height: 1.5;
+}
+
+#projects {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.project-item {
+    width: 250px;
+}
+
+.project-image {
+    width: 190px;
+    height: 215px;
+    background: #ccc;
+    margin-bottom: 20px;
+}
+
+.project-item p {
+    text-align: left;
+    line-height: 1.5;
+}
+
+#gallery {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 75px;
+    row-gap: 45px;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gallery-item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.gallery-image {
+    width: 190px;
+    height: 230px;
+    background: #ccc;
+}
+
+#contact {
+    text-align: center;
+}
+
+#contact p {
+    font-weight: bold;
+    margin-top: 5rem;
+    font-size: 32px;
+}
+
+footer {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Mode Gelap */
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dark-mode nav a {
+    color: #ffffff;
+}
+
+.dark-mode .hero-image,
+.dark-mode .about-image,
+.dark-mode .skill-image,
+.dark-mode .project-image,
+.dark-mode .gallery-image {
+    background: #444;
+}
+
+#theme-toggle {
+    background: grey;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 0;
+    border-radius: 5px;
+    width: 70px;
+    height: 30px;
+    margin-top: 2px;
+}
+
+/* Media Queries untuk Tablet */
+@media (max-width: 768px) {
+    header {
+        padding: 0 20px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .hero-image {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .about-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .about-content p {
+        max-width: 100%;
+    }
+
+    .skills-container,
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery-container {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+
+    section {
+        margin: 20px;
+    }
+}
+
+/* Media Queries untuk Ponsel */
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero-text h1 {
+        font-size: 30px;
+    }
+
+    button {
+        width: 100%;
+        margin-right: 0 !important;
+        margin-bottom: 10px;
+    }
+
+    .gallery-container {
+        grid-template-columns: 1fr;
+    }
+
+    #contact p {
+        font-size: 24px;
+    }
+
+    .hero {
+        flex-direction: column;
+        /* Tata letak vertikal */
+    }
+
+    .hero-image {
+        order: 2;
+        /* Letakkan gambar di bawah teks */
+        width: 100%;
+        /* Lebar penuh */
+        height: auto;
+    }
+}
