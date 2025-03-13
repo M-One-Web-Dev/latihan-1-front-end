@@ -3,142 +3,97 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Saya</title>
+    <title>Portofolio Saya</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lexend+Mega:wght@100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
   </head>
-
   <body>
     <header>
+      <div class="logo">Logo</div>
       <nav>
-        <a href="#hero" class="logo">Logo</a>
-        <div class="menu">
-          <a href="#about">About Me</a>
-          <a href="#skills">Skill</a>
-          <a href="#projects">Project</a>
-          <a href="#contact">Contact</a>
-        </div>
+        <a href="#about">About Me</a>
+        <a href="#skills">Skill</a>
+        <a href="#projects">Project</a>
+        <a href="#contact">Contact</a>
+        <button id="theme-toggle">🌙</button>
       </nav>
+      <div class="menu-toggle">☰</div>
     </header>
 
-    <section id="hero">
-      <div class="text-hero">
-        <h1>Break the limits, beyond the dreams</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in
-          velit id mi lacinia volutpat vitae quis turpis. Donec pretium velit ac
-          eros feugiat commodo. Nunc eget venenatis tellus, varius placerat
-          ante.
-        </p>
-        <div class="button-hero">
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Welcome to My Portofolio</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae vero alias autem officiis laboriosam, unde aliquam animi illum iure blanditiis molestiae nobis quibusdam quis rem?</p>
+        <div class="hero-buttons">
           <button></button>
           <button></button>
         </div>
       </div>
-      <div class="image-hero"></div>
+      <div class="hero-image"></div>
     </section>
 
-    <section id="about">
+    <section id="about" class="about">
       <h2>About Me</h2>
-      <div class="about-wrapper">
-        <div class="image-about"></div>
-        <p>
-          Halo! Saya adalah seorang front-end developer pemula yang sedang
-          belajar HTML, CSS, dan JavaScript.
-        </p>
+      <div class="about-content">
+        <div class="about-image"></div>
+        <p>Halo! Saya adalah seorang front-end developer pemula yang sedang belajar HTML, CSS, dan JavaScript.</p>
       </div>
     </section>
 
-    <section id="skills">
+    <section id="skills" class="skills">
       <h2>Skills</h2>
-      <div class="list-skills">
-        <div class="skill-items">
-          <div class="image-skills"></div>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in
-            velit id mi lacinia volutpat vitae quis turpis.
-          </p>
+      <div class="skills-container">
+        <div class="skill">
+          <div class="skill-icon"></div>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi ullam dolorum dolor nostrum fugit temporibus.</p>
         </div>
-        <div class="skill-items">
-          <div class="image-skills"></div>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in
-            velit id mi lacinia volutpat vitae quis turpis.
-          </p>
+        <div class="skill">
+          <div class="skill-icon"></div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta cupiditate sunt adipisci, a accusantium praesentium.</p>
         </div>
-        <div class="skill-items">
-          <div class="image-skills"></div>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in
-            velit id mi lacinia volutpat vitae quis turpis.
-          </p>
+        <div class="skill">
+          <div class="skill-icon"></div>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto quo quisquam placeat neque? Ipsa, maiores.</p>
         </div>
       </div>
     </section>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="projects-list">
-        <div class="projects-items">
-          <div class="image-projects"></div>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in
-            velit id mi lacinia volutpat vitae quis turpis.
-          </p>
+    <section id="projects" class="projects">
+      <h2>Project</h2>
+      <div class="projects-container">
+        <div class="project">
+          <div class="project-image"></div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi fugit, id voluptas perspiciatis rerum quisquam.</p>
         </div>
-        <div class="projects-items">
-          <div class="image-projects"></div>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in
-            velit id mi lacinia volutpat vitae quis turpis.
-          </p>
+        <div class="project">
+          <div class="project-image"></div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi fugit, id voluptas perspiciatis rerum quisquam.</p>
         </div>
-        <div class="projects-items">
-          <div class="image-projects"></div>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in
-            velit id mi lacinia volutpat vitae quis turpis.
-          </p>
+        <div class="project">
+          <div class="project-image"></div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi fugit, id voluptas perspiciatis rerum quisquam.</p>
         </div>
       </div>
     </section>
 
-    <section id="gallery">
-      <h2>Gallery</h2>
-      <div class="gallery-lists">
-        <div class="gallery-items">
-          <div class="gallery-images"></div>
-        </div>
-        <div class="gallery-items">
-          <div class="gallery-images"></div>
-        </div>
-        <div class="gallery-items">
-          <div class="gallery-images"></div>
-        </div>
-        <div class="gallery-items">
-          <div class="gallery-images"></div>
-        </div>
-        <div class="gallery-items">
-          <div class="gallery-images"></div>
-        </div>
-        <div class="gallery-items">
-          <div class="gallery-images"></div>
-        </div>
+    <section class="gallery">
+      <h2>Galeri</h2>
+      <div class="gallery-container">
+        <div class="gallery-item"></div>
+        <div class="gallery-item"></div>
+        <div class="gallery-item"></div>
+        <div class="gallery-item"></div>
+        <div class="gallery-item"></div>
+        <div class="gallery-item"></div>
       </div>
     </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: example@email.com</p>
+    <section id="contact" class="contact">
+      <h2>Contact Me</h2>
+      <p class="email">Email: example@email.com</p>
     </section>
 
     <footer>
-      <p>&copy; 2023 Portfolio Saya</p>
+      <p>© 2023 Portfolio Saya</p>
     </footer>
 
     <script src="script.js"></script>
