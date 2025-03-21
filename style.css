@@ -32,6 +32,54 @@ nav ul li a {
   font-weight: bold;
 }
 
+.menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  background: #333;
+  width: 100%;
+  text-align: center;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  border-top: 1px solid #444;
+}
+
+.menu a:hover {
+  background: #444;
+}
+
+.hamburger {
+  display: block;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+@media (min-width: 768px) {
+  .menu {
+      display: flex;
+      position: static;
+      flex-direction: row;
+      background: none;
+      width: auto;
+  }
+
+  .menu a {
+      border: none;
+      padding: 0 15px;
+  }
+
+  .hamburger {
+      display: none;
+  }
+}
+
 /* Hero Section */
 .hero {
   display: flex;
